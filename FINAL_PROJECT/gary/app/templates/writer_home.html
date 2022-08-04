@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1,
+            shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>GARY</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="static/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+            crossorigin="anonymous"></script>
+        <!-- Simple line icons-->
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css"
+            rel="stylesheet" />
+        <!-- Google fonts-->
+        <link
+            href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
+            rel="stylesheet" type="text/css" />
+        <!-- JQUERY -->
+        <script class="u-script" type="text/javascript" src="{{
+            url_for('static', filename='jquery.js') }}" defer=""></script>
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{{ url_for('static',filename='/css/styles.css') }}"
+            rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
+        <header id="page-top">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg bg-secondary text-uppercase
+                fixed-top" id="mainNav">
+                <div class="container">
+                    <a class="navbar-brand" href="#page-top">GARY</a>
+                    <button class="navbar-toggler text-uppercase
+                        font-weight-bold
+                        bg-primary text-white rounded" type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarResponsive"
+                        aria-controls="navbarResponsive" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        Menu
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ms-auto">
+                           <li class="nav-item mx-0 mx-lg-1"><a class="nav-link
+                                    py-3 px-0 px-lg-3 rounded" href="#page-top">Home
+                            <li class="navbar-nav-item
+                                nav-item mx-0 mx-lg-1"><a class="nav-link
+                                    py-3 px-0 px-lg-3 rounded" href={{
+                                    url_for('results')}}>Test our AI </a></li>
+                            <li class="nav-item mx-0 mx-lg-1"><a class="nav-link
+                                    py-3 px-0 px-lg-3 rounded" href="#about">About
+                                    Gary</a></li>
+                            <li class="nav-item mx-0 mx-lg-1"><a class="nav-link
+                                    py-3 px-0 px-lg-3 rounded" href="#process">The
+                                    Process</a></li>
+                            <li class="nav-item mx-0 mx-lg-1"><a class="nav-link
+                                    py-3 px-0 px-lg-3 rounded" href="#team">About
+                                    Us</a></li>
+                            <li class="nav-item mx-0 mx-lg-1"><a class="nav-link
+                                    py-3 px-0 px-lg-3 rounded"
+                                    href="#merch">Merch/Bacon Pancakes</a></li>
+                            <li class="nav-item mx-0 mx-lg-1"><a class="nav-link
+                                    py-3 px-0 px-lg-3 rounded" href="#video">Important
+                                    Video</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- Masthead-->
+        <body>
+            <section class="masthead bg-primary text-white text-center">
+                <div class="container d-flex align-items-center flex-column">
+                    <!-- Masthead Avatar Image-->
+                    <img class="masthead-avatar mb-5"
+                        src="https://media.discordapp.net/attachments/998386145283035177/1003673790045224990/2022-07-22_12-40.jpg?width=586&height=554"
+                        alt="..." />
+                    <!-- Masthead Heading-->
+                    <h1 class="masthead-heading text-uppercase mb-0">GARY</h1>
+                    <!-- Masthead Subheading-->
+                    <p class="masthead-subheading font-weight-light mb-0 mt-3"><strong>G</strong>reat
+                        <strong>A</strong>I <strong>R</strong>eally <strong>Y</strong>es</p>
+                    <!-- Icon Divider-->
+                    <div class="divider-custom divider-light">
+                        <div class="divider-custom-line"></div>
+                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                        <div class="divider-custom-line"></div>
+                    </div>
+                    <!-- Test AI Button -->
+                    <section id="testAI">
+                        <a class="btn btn-secondary btn-xl" style="mt-4" href={{
+                            url_for('results')}}>Try the Model</a>
+                    </section></section>
+                <br>
+                <br>
+                <!-- The Project section -->
+                <div style="text-secondary">
+                    <section class="content-section text-secondary
+                        text-center" id="theproject">
+                        <div class="container px-4 px-lg-5">
+                            <div class="content-section-heading">
+                                <section id='about'>
+                                    <h2 class="mb-3">The Project</h2>
+                                </section>
+                            </div>
+                            <!-- Icon Divider-->
+                            <div class="divider-custom">
+                                <div class="divider-custom-line"></div>
+                                <div class="divider-custom-icon"><i class="fas
+                                        fa-star"></i></div>
+                                <div class="divider-custom-line"></div>
+                            </div>
+                            <!-- About Section Content-->
+                            <div class="row" style=' text-secondary'>
+                                <div class="col-lg-4 ms-auto"><p
+                                        class="lead">We chose to
+                                        create a comedy generator because we
+                                        sympathized
+                                        with all the people who found it
+                                        hard to come up
+                                        with jokes on the go. We decided to
+                                        create GARY to
+                                        enable users to always have a joke
+                                        ready! Jokes are
+                                        also a key part to all social
+                                        interactions and helps
+                                        keep the conversation easy-going
+                                        with some amazing
+                                        jokes!</p></div>
+                                <div class="col-lg-4 me-auto"><p
+                                        class="lead">We created an
+                                        AI that generates jokes when the
+                                        user inputs a
+                                        prompt. GARY outputs a joke for the
+                                        user to use
+                                        themselves. GARY comes with 3
+                                        different comedians to
+                                        choose from:</p>
+                                    <li>Dad Jokes</li>
+                                    <li>Patton Oswalt</li>
+                                    <li>Groot</li>
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+                </div>
+<br><br>
+                <!-- Presentation Section -->
+                <section id="presentation">
+                    <div style="position: relative; width: 100%;
+                        height: 0; padding-top: 56.2500%;
+                        padding-bottom: 48px; box-shadow: 0 2px 8px
+                        0 rgba(63,69,81,0.16); margin-top: 1.6em;
+                        margin-bottom: 0.9em; overflow: hidden;
+                        border-radius: 8px; will-change:
+                        transform;">
+                        <iframe loading="lazy" style="position:
+                            absolute; width: 100%; height: 100%;
+                            top: 0; left: 0; border: none; padding:
+                            0;margin: 0;"
+                            src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFILQvSWvs&#x2F;view?embed"
+                            allowfullscreen="allowfullscreen"
+                            allow="fullscreen"></iframe>
+                    </div>
+<br><br>
+                    <!-- Process Section-->
+                    <div class="container">
+                        <!-- Process Section Heading-->
+                        <h2 class="page-section-heading text-center
+                            text-uppercase
+                            text-secondary">The Process</h2>
+                        <!-- Icon Divider-->
+                        <div class="divider-custom">
+                            <div class="divider-custom-line"></div>
+                            <div class="divider-custom-icon"><i class="fas
+                                    fa-star"></i></div>
+                            <div class="divider-custom-line"></div>
+                        </div>
+                        <!-- Process Section Content-->
+                        <div class="row">
+                            <div class="col-lg-4 ms-auto"><p class="lead">Week
+                                    1: We
+                                    learned the fundamentals of Python during
+                                    the first
+                                    week. We learnt about the various built-in
+                                    functions, loops, variables, and data types.
+                                    We
+                                    mainly focused on dictionaries and lists to
+                                    help us
+                                    prepare for the next steps. We were also
+                                    introduced
+                                    to various concepts within the field of
+                                    Natural
+                                    Language Processing to get us started with
+                                    our
+                                    projects.</p></div>
+                            <div class="col-lg-4 me-auto"><p class="lead">Week
+                                    2: We
+                                    chose a project topic during the second week
+                                    of AI
+                                    Camp and gathered data for our comedy bot.
+                                    We
+                                    learned how to use Pandas and how to work
+                                    with
+                                    dataframes to manipulate data. We also
+                                    trained our
+                                    models with the datasets we had and finally
+                                    had a
+                                    first version of our product!</p></div>
+                            <div class="col-lg-4 me-auto"><p class="lead">Week
+                                    3: The
+                                    final week of AI Camp, we learnt about HTML,
+                                    CSS and
+                                    Bootstrap. We started to design our products
+                                    website
+                                    and used backend tools to get our website up
+                                    and
+                                    running. </p></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <br>
+            <br>
+            <!-- <h4><strong>The AI</strong></h4>
+                        <p class="text-faded mb-0">GARY is a series of custom trained GPT-2 model that have learned from some of the best comedians of all time.</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-playlist"></i></span>
+                        <h4><strong>Comedy</strong></h4>
+                        <p class="text-faded mb-0">GARY will make jokes based off of any prompt you provide it.</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-clock"></i></span>
+                        <h4><strong>Timeline</strong></h4>
+                        <p class="text-faded mb-0">The ai was trained within 3 hours and the coding was done across a week.</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-docs"></i></span>
+                        <h4><strong>Features</strong></h4>
+                        <p class="text-faded mb-0">GARY can make jokes and lines of comedy based on dad jokes, Patton Oswalt and Groot</p>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+            <!-- Team
+              
+        <section class="content-section" id="team">
+            <div class="container px-4 px-lg-5">
+                <div class="content-section-heading text-center">
+                    <h3 class="text-secondary mb-0">About Us</h3>
+                    <h2 class="mb-5">The Team</h2>
+                </div>
+                <div class="row gx-0">
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" href="#!">
+                            <div class="caption">
+                                <div class="caption-content">
+                                  <img class="img-fluid" src="https://media.discordapp.net/attachments/1003674940718977035/1003680623975747645/IMG_1357.jpg?width=491&height=655" alt="..." />
+                                    <div class="h1">Jason Lee</div>
+                                  <div class="h2">Product Manager</div>
+                                    <p class="mb-0"> Enjoys the small things in life.  Really cool guy all around. 
+                                      Contact Jason at janggyu07@gmail.com</p>
+                                </div>
+                            </div>
+                            
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" href="#!">
+                            <div class="caption">
+                                <div class="caption-content">
+                                                              <img class="img-fluid" src="{{ url_for('static',filename='img/IMG_2169.jpg') }}" alt="..." />
+
+                                   <div class="h1">Jonathan Niu</div>
+                                    <div class="h2">Consigliere</div>
+                                    <p class="mb-0">Assistant Product Manager, but Consigliere sounds better. Contact Jonathan at jonathanniu49@gmail.com</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" href="#!">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <div class="h1">Ethan Acevedo</div>
+                                    <div class="h2">Helper</div>
+                                    <p class="mb-0">Named Gary. Need I say more? :) Contact Ethan at exacevedo222@gmail.com</p>
+                                </div>
+                            </div>
+
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" href="#!">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <div class="h1">Aryan Patel</div>
+                                    <div class="h2">Yes</div>
+                                    <p class="mb-0">Helped</p>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="{{ url_for('static',filename='img/portfolio-4.jpg') }}" alt="..." />
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" href="#!">
+                            <div class="caption">
+                                <div class="caption-content">
+                                  <img class="img-fluid" src="https://media.discordapp.net/attachments/833775732802584596/1004075252252422284/IMG_3054.png?width=488&height=488" alt="..." />
+                                    <div class="h1">Dominica Prentice</div>
+                                    <div class="h2">The British Person</div>
+                                  <p class="mb-0">Helped out with various things. <strike>Kinda carried the team ngl</strike></p> <!--i- thanks???
+                                </div>
+                            </div>
+                            <img class="img-fluid" 
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" href="#!">
+                            <div class="caption">
+                                <div class="caption-content">
+                                                              <img class="img-fluid" src="https://media3.giphy.com/media/T8Oh4hRX0mT6/giphy.gif" alt="..." />
+                                    <div class="h1">Matthew Chen???</div>
+                                    <div class="h2">Nope</div>
+                                    <p class="mb-0">Never turned his camera on. What did he do again?</p>
+                                </div>
+                            </div>
+
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+            <!-- Team Section-->
+            <section class="page-section team bg-primary" id="team">
+                <div class="row" style="bg-primary" m-3>
+                    <div class="container" style="bg-primary">
+                        <!-- Team Section Heading-->
+                        <h2 class="page-section-heading text-center bg-primary
+                            text-uppercase
+                            text-white mb-0">About Us</h2>
+                        <!-- Icon Divider-->
+                        <div class="divider-custom divider-light">
+                            <div class="divider-custom-line"></div>
+                            <div class="divider-custom-icon"><i class="fas
+                                    fa-star"></i></div>
+                            <div class="divider-custom-line"></div>
+                        </div>
+                        <!-- Team Grid Items-->
+                        <div class="row justify-content-center">
+                            <!-- Team Item 1-->
+                            <div class="col-lg-4" style="width: 18rem;">
+                                <img
+                                    src="https://media.discordapp.net/attachments/1003674940718977035/1003680623975747645/IMG_1357.jpg?width=491&height=655"
+                                    class="card-img-top" alt="..." height=375.5>
+                                <div class="card-body">
+                                    <h5 class="card-title text-white">Jason Lee</h5>
+                                    <p class="card-text text-white">Product
+                                        Manager</p>
+                                </div>
+                            </div>
+                            <!-- team Item 2-->
+                            <div class="col-lg-4" style="width: 18rem;">
+                                <img
+                                    src="https://media.discordapp.net/attachments/1003674940718977035/1003681740176502885/IMG_2169.jpg?width=492&height=655"
+                                    class="card-img-top" alt="..." height=375.5>
+                                <div class="card-body">
+                                    <h5 class="card-title text-white">Jonathan
+                                        Niu</h5>
+                                    <p class="card-text text-white">Consigliere(Assistant
+                                        PM)</p>
+                                </div>
+                            </div>
+                            <!-- team Item 3-->
+                            <div class="col-lg-4" style="width: 18rem;">
+                                <img
+                                    src="https://cdn.discordapp.com/attachments/964339799383240734/1003684907442249848/IMG_4532.png"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title text-white">Ethan
+                                        Acevedo</h5>
+                                    <p class="card-text text-white">(Front End)
+                                        Named GARY and did stuff</p>
+                                </div>
+                            </div>
+                          </div>
+<!--                             <div class="w-100"></div> -->
+                            <!-- team Item 4-->
+                      <div class="row justify-content-center">
+                            <div class="col-lg-4" style="width: 18rem;">
+                                <meta charset="utf-8">
+                                <style>
+                                  .card {
+                                      width: 130px;
+                                      height: 250px;
+                                      position: relative;
+                                      display: inline-block;
+                                      margin: 10px;
+                                  }
+                                  .card .img-top {
+                                      display: none;
+                                      position: absolute;
+                                      top: 0;
+                                      left: 0;
+                                      z-index: 99;
+                                  }
+                                  .card:hover .img-top {
+                                      display: inline;
+                                  }
+                              </style>
+                                <div class="card">
+                                    <img
+                                        src="https://raw.githubusercontent.com/mxtthew132/gary/main/2.png"
+                                        alt="Card Back" height=250>
+                                    <img
+                                        src="https://i.gifer.com/M3In.gif" width=250
+                                        class="img-top" alt="Card Front">
+                                </div>
+
+                                <h5 class="card-title text-white">Matthew Chen</h5>
+                                <p class="card-text text-white">Doesn't do much,
+                                    rarely even shows up (is traveling in
+                                    Europe)</p>
+                            </div>
+<!--                         </div> -->
+                        <!-- team Item 5-->
+                        <div class="col-lg-4" style="width: 18rem;">
+                            <img
+                                src="https://media.discordapp.net/attachments/1003677903424340120/1003713067995111464/IMG_1358.jpg?width=959&height=702"
+                                class="card-img-top" alt="..." height=351>
+                            <div class="card-body">
+                                <h5 class="card-title text-white">Aryan Patel</h5>
+                                <p class="card-text text-white">Back end - Made
+                                    the Patton model (don't judge me pls) :))</p>
+                            </div>
+                        </div>
+                        <!-- team Item 6-->
+                        <div class="col-lg-4" style="width: 18rem;">
+                            <img
+                                src="https://media.discordapp.net/attachments/833775732802584596/1004075252252422284/IMG_3054.png?width=488&height=488"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-white">Dominica
+                                    Prentice</h5>
+                                <p class="card-text text-white">British</p>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- merch Section-->
+        <section class="page-section" id="merch">
+            <div class="container">
+                <!-- merch Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase
+                    text-secondary mb-0">Merch and Bacon Pancakes:</h2>
+                <!-- Icon Divider-->
+
+                <p>
+                    <h1 style= text-align:center;><strong>Buy merch here:</strong></h1>
+                    <p>
+                        <h1 style= text-align:center;>
+                            <a
+                                href="https://www.youtube.com/watch?v=qmOLtTGvsbM">BUY
+                                HERE</a>
+                            <h1 style= text-align:center;><img src="https://c.tenor.com/r06VDzUegRIAAAAC/jake-adventure-time.gif"></h1>
+                            <p>
+                                <h1 style= text-align:center;><strong>Buy bacon
+                                        pancakes here:</strong></h1>
+                                <p>
+                                    <h1 style="color:red; text-align:center;"><u><strong>SOLD
+                                                OUT</strong></u></h1>
+                                    <p>
+                                        <h1 style= text-align:center;><font
+                                                size='3'><h1
+                                                    style="color:white;">sorry
+                                                    about that</h1></font
+                                                size=3></h1>
+                                    </p>
+                                </section>
+                                <!-- video Section-->
+                                <section class="page-section bg-primary"
+                                    id="video">
+                                    <div class="container">
+                                        <!-- video Section Heading-->
+                                        <h2 class="page-section-heading
+                                            text-center text-uppercase
+                                            text-white mb-0";
+                                            style=text-align:center>Important
+                                            Video</h2>
+                                        <br>
+                                        <br>
+                                        <!-- Icon Divider-->
+
+                                        <center><iframe width="420" height="315"
+                                                src="https://www.youtube.com/embed/FTQbiNvZqaY?playlist=FTQbiNvZqaY&loop=1">
+                                            </iframe></center>
+                                        <div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <!-- Footer-->
+                                <footer class="footer text-center">
+                                    <div class="container">
+                                        <div class="row">
+                                            <!-- Footer Location-->
+                                            <div class="col-lg-4 mb-5 mb-lg-0">
+                                                <h4 class="text-uppercase mb-4">Location</h4>
+                                                <p class="lead mb-0">
+                                                    AI CAMP
+                                                    <br />
+                                                    Discord and Zoom
+                                                </p>
+                                            </div>
+                                            <!-- Footer Social Icons-->
+                                            <div class="col-lg-4 mb-5 mb-lg-0">
+                                                <h4 class="text-uppercase mb-4">Around
+                                                    the Web</h4>
+                                                <a class="btn btn-outline-black
+                                                    btn-social mx-1"
+                                                    href="https://www.youtube.com/watch?v=hLdmoX8UsRA
+                                                    "><i
+                                                        class="fab fa-fw
+                                                        fa-facebook-f"></i></a>
+                                                <a class="btn btn-outline-black
+                                                    btn-social mx-1"
+                                                    href="https://www.youtube.com/watch?v=Bs4ORZLpa8c
+                                                    "><i
+                                                        class="fab fa-fw
+                                                        fa-twitter"></i></a>
+                                                <a class="btn btn-outline-black
+                                                    btn-social mx-1"
+                                                    href="https://www.youtube.com/watch?v=fyhPEp4VYTw"><i
+                                                        class="fab fa-fw
+                                                        fa-linkedin-in"></i></a>
+                                                <a class="btn btn-outline-black
+                                                    btn-social mx-1"
+                                                    href="https://www.youtube.com/watch?v=jZKLaD66PQs
+"><i
+                                                        class="fab fa-fw
+                                                        fa-dribbble"></i></a>
+                                              <a class="btn btn-outline-black
+                                                    btn-social mx-1"
+                                                    href="https://www.youtube.com/watch?v=Mqaf2rCZIzE&list=PLNRIpq3d76AyBhIhqBWAZ8H9qtisMWALY
+                                                    "><i
+                                                        class="fab fa-fw
+                                                        fa-youtube-f"></i></a>
+                                            </div>
+                                            <!-- Footer About Text-->
+                                            <div class="col-lg-4">
+                                                <h4 class="text-uppercase mb-4">Check
+                                                    out our amazing album</h4>
+                                                <p class="lead mb-0">
+                                                    Listening to this helps us a
+                                                    lot! Here is the album:
+                                                    <a
+                                                        href="https://open.spotify.com/album/62U7xIHcID94o20Of5ea4D?si=EeN0VefTRfau5QVvaycMRg">Click
+                                                        Here</a>
+                                                    .
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </footer>
+                                <!-- Copyright Section-->
+                                <div class="copyright py-4 text-center
+                                    text-white">
+                                    <div class="container"><small>Copyright
+                                            &copy; no
+                                            copyright :(</small></div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script
+            src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
