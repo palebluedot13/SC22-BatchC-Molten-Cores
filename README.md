@@ -1,5 +1,5 @@
 # SC22-BatchC-Molten-Cores - GARY 
-
+![GARY](https://media.discordapp.net/attachments/998386145283035177/1003673790045224990/2022-07-22_12-40.jpg?width=586&height=554)
 ## Project Idea
 GARY - Comedy AI that generates jokes for the user based off a given prompt. Featuring 3 different models: Dad jokes, Patton Oswalt, and "Groot model". The prompts are run through the selected model, censored using a list of various curse words, and finally outputed onto the website.
 
