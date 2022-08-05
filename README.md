@@ -47,10 +47,3 @@ Contains the HTML pages used for the webpage. Edit these to fit your project. wr
 
 ## Files used for deployment
 Dockerfile uwsgi.ini wsgi.py nlp Do not touch these files.
-## Modelling
-
-Test and Train
-
-Front/ End web dev
-
-Conclusion
