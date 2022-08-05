@@ -1,5 +1,6 @@
-# SC22-BatchC-Molten-Cores
-Project Idea
+# SC22-BatchC-Molten-Cores - GARY 
+
+## Project Idea
 GARY - Comedy AI that generates jokes for the user based off a given prompt. Featuring 3 different models: Dad jokes, Patton Oswalt, and "Groot model". The prompts are run through the selected model, censored using a list of various curse words, and finally outputed onto the website.
 
 ## nlp_writer_scaffold
@@ -37,9 +38,6 @@ The files/directories which you will need to edit are bolded, and the files you 
 
 ## main.py
 Contains the main flask app itself.
-
-## requirements.txt
-Contains list of packages and modules required to run the flask app. Edit only if you are using additional packages that need to be pip installed in order to run the project.
 
 ## static/
 Contains the static images, CSS, & JS files used by the flask app for the webpage.  Place all your images used for your website in static/images/. 
